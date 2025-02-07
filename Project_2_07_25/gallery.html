@@ -14,19 +14,39 @@
 <body>
 
     <h1 class="title">Gallery</h1>
-
-    <div class="navigation">
-        <a href="Project.html">Home</a>
-        <a href="#Booking.html">Booking</a>
-        <a href="#About-Me.html">About Me</a>
-        <a href="#Contact.html">Contact</a>
-    </div>
+    <section>
+        <!--
+        <aside class ="tilttext">
+            Navigation &hearts;
+        </aside>
+        -->
+        <div class="navigation">
+            <a href="Project.html">Home</a>
+            <a href="#Booking.html">Booking</a>
+            <a href="#About-Me.html">About Me</a>
+            <a href="#Contact.html">Contact</a>
+        </div>
+        
+    </section>
+    
 
     <div class="gallery">
-        <img src="nail2.jpg" alt="Image 1" class="gallery-img" onclick="openLightbox(this)">
-        <img src="nail3.jpg" alt="Image 2" class="gallery-img" onclick="openLightbox(this)">
-        <img src="nail4.jpg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
-        <img src="nail5.jpg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+        <div class ="gallery-item">
+            <img src="nail2.jpg" alt="Image 1" class="gallery-img" onclick="openLightbox(this)">
+            <div class ="description">Cute pink nails with a Hello Kitty theme featuring intricate white lace patterns and adorable small bear accents.</div>
+        </div>
+        <div class ="gallery-item">
+            <img src="nail3.jpg" alt="Image 2" class="gallery-img" onclick="openLightbox(this)">
+            <div class ="description">Elegant clear nails with golden foil and pink floral accents, exuding a sophisticated and classy vibe.</div>
+        </div>
+        <div class ="gallery-item">
+            <img src="nail4.jpg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+            <div class ="description">Soft pastel pink nails with a marble swirl design and delicate heart-shaped accents, perfect for a romantic look.</div>
+        </div>
+        <div class ="gallery-item">
+            <img src="nail5.jpg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+            <div class ="description">Bold autumn-inspired nails with warm brown tones, golden accents, and abstract black patterns, ideal for a striking statement.</div>
+        </div>
     </div>
 
     <!-- Lightbox Modal -->

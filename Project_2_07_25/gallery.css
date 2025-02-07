@@ -3,8 +3,12 @@
    src: url('PressStart2P-Regular.ttf') format('truetype');
 
 }
-h1 {justify-content: center;  display: flex;
-  align-items: center; font-size: 40px}
+h1 {
+    justify-content: center;  
+    display: flex;
+    align-items: center; 
+    font-size: 40px;
+}
 
 
 .navigation {
@@ -24,24 +28,36 @@ h1 {justify-content: center;  display: flex;
     bottom: 5%;
 }
 
-    .navigation a {
-        transform: scale(0.85);
-        text-decoration: none;
-        font-family: 'CustomFont1', sans-serif;
-        display: block;
-        width: 70%;
-        padding: 15px;
-        margin: 10px 0;
-        text-align: center;
-        color: black;
-        font-size: 16px;
-        border: 5px solid #9ba6cf;
-        border-radius: 5px;
-        background-color: #f2f8ff;
-        text-align: center;
-        white-space: nowrap;
-       
-    }
+.navigation a {
+    transform: scale(0.85);
+    text-decoration: none;
+    font-family: 'CustomFont1', sans-serif;
+    display: block;
+    width: 70%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    border: 5px solid #9ba6cf;
+    border-radius: 5px;
+    background-color: #f2f8ff;
+    text-align: center;
+    white-space: nowrap;
+    margin:auto;
+    
+}
+.tilttext {
+    display: inline-block;
+    transform: rotate(340deg);
+    color: deeppink;
+    font-weight: bold;
+    font-family: 'CustomFont1', sans-serif;
+    position: relative;
+    left: 30.5%;
+    z-index: 1;
+    bottom: 0.05%;
+}
 .title {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -80,21 +96,45 @@ body {margin: 0; padding: 0;}
 
 
 .gallery {
+    background-color: #cad1ec;
+    margin: 2% 5% 2% 5%;
+    padding: 30px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    border: 10px ridge #ffe898;
+    border-radius: 25px;
    
 }
-
+.gallery-item{
+    text-align: center;
+    width:400px;
+    margin: 5px;
+    border: 5px solid #9ba6cf;
+    border-radius: 5px;
+    overflow: hidden;
+}
 .gallery-img {
+    display: block;
+    margin:auto;
     width: 400px;
     height: 450px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
+    
+    
 }
-
+.description{
+    font-family: 'CustomFont1', sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+}
 .gallery-img:hover {
     transform: scale(1.1);
 }
