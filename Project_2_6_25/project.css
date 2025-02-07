@@ -6,6 +6,12 @@
 
 }
 
+/* use this to scale the website */
+body
+{
+    transform: scale(0.85);
+
+}
 
 /*TITLE OF THE WEBSITE*/
 header {
